@@ -2,12 +2,17 @@
 
 :root {
   --color-bg: #ffffff;
-  --color-text: #09090b;
-  --color-text-muted: #52525b;
-  --color-gold: #9d7c2a; /* Deeper Gold for light backgrounds */
+  --color-text: #3d2b1f;
+  /* Dark Espresso Brown */
+  --color-text-muted: #6b5a4d;
+  /* Muted Brown */
+  --color-gold: #9d7c2a;
+  /* Deeper Gold for light backgrounds */
   --color-gold-hover: #735a1e;
-  --color-pearl: #18181b; /* Switched to a dark contrasting color in light mode */
-  --color-title-text: #4a2e1b; /* Chocolate/Coffee Dark Brown */
+  --color-pearl: #18181b;
+  /* Switched to a dark contrasting color in light mode */
+  --color-title-text: #4a2e1b;
+  /* Chocolate/Coffee Dark Brown */
 }
 
 * {
@@ -27,6 +32,10 @@ main {
   min-height: 100vh;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h4,
+h5,
+h6 {
   color: var(--color-title-text) !important;
 }

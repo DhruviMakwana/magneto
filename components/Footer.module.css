@@ -2,7 +2,7 @@
 .footer-modern {
   position: relative;
   background: #fbfbfb; 
-  color: #000000;
+  color: var(--color-text);
   padding: 80px 0 0 0;
   margin-top: 0;
   overflow: hidden;
@@ -78,7 +78,7 @@
 .brand-desc {
   font-size: 15px;
   line-height: 1.6;
-  color: #262626; /* Deep charcoal */
+  color: var(--color-text); /* Brown text */
 }
 
 .social-links {
@@ -147,7 +147,7 @@
 }
 
 .nav-col a {
-  color: #262626;
+  color: var(--color-text);
   text-decoration: none;
   font-size: 15px;
   transition: all 0.2s ease;
@@ -165,7 +165,7 @@
 }
 
 .nav-col a:hover {
-  color: #000000;
+  color: var(--color-title-text);
   padding-left: 5px;
 }
 
@@ -193,7 +193,7 @@
 }
 
 .footer-bottom-content p {
-  color: #404040;
+  color: var(--color-text-muted);
   font-size: 14px;
 }
 
@@ -204,14 +204,14 @@
 }
 
 .bottom-links a {
-  color: #404040;
+  color: var(--color-text-muted);
   text-decoration: none;
   font-size: 14px;
   transition: color 0.2s;
 }
 
 .bottom-links a:hover {
-  color: #000000;
+  color: var(--color-title-text);
 }
 
 .bottom-links .dot {

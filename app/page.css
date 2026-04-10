@@ -42,7 +42,8 @@
   display: flex;
   align-items: center;
   background: #ffffff;
-  padding: 160px 60px 40px 60px;
+  padding: 70px 60px 40px 60px;
+  /* Reduced top padding further */
   overflow: hidden;
   position: relative;
 }
@@ -53,12 +54,15 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 80px;
-  align-items: center;
+  /* align-items: center; */
 }
 
 /* Text Side */
 .hero-text-side {
   animation: fadeInUp 1s ease-out forwards;
+  transform: translateY(-180px);
+  margin-top: 50px;
+  /* Shifts the text up even further */
 }
 
 .hero-tagline {
@@ -72,18 +76,20 @@
 }
 
 .hero-title {
-  font-size: clamp(3rem, 6vw, 5rem);
-  font-weight: 800;
+  font-family: var(--font-playfair), serif;
+  font-size: clamp(3.2rem, 6.5vw, 5.5rem);
+  font-weight: 900;
   line-height: 1.1;
   color: var(--color-title-text);
   margin-bottom: 30px;
-  letter-spacing: -2px;
+  letter-spacing: -1.5px;
 }
 
 .hero-subtitle {
   font-size: 1.1rem;
   line-height: 1.8;
-  color: #374151;
+  color: #5d4a3b;
+  /* Warm Dark Brown for subtitle */
   /* Deeper gray for visibility */
   max-width: 500px;
   margin-bottom: 45px;
@@ -128,6 +134,7 @@
 
 /* Image Side */
 .hero-image-side {
+  margin-top: 5px;
   position: relative;
   animation: slideInRight 1.2s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
 }
@@ -139,6 +146,7 @@
   aspect-ratio: 4/5;
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(0, 0, 0, 0.05);
+  margin-top: 30px;
 }
 
 .hero-main-img {
@@ -177,7 +185,7 @@
 }
 
 .section-title {
-  font-size: 3.2rem;
+  font-size: clamp(2.2rem, 5vw, 3.2rem);
   font-weight: 800;
   color: var(--color-title-text);
   margin-bottom: 15px;
@@ -316,7 +324,7 @@
 
 @media (max-width: 1100px) {
   .hero-split {
-    padding: 120px 40px 60px 40px;
+    padding: 60px 40px 60px 40px;
   }
 
   .hero-split-content {
@@ -389,7 +397,7 @@
 }
 
 .brands-title {
-  font-size: 3rem;
+  font-size: clamp(2rem, 5vw, 3rem);
   font-weight: 700;
   color: var(--color-title-text);
   margin-bottom: 12px;
@@ -398,7 +406,8 @@
 
 .brands-subtitle {
   font-size: 1.15rem;
-  color: #555;
+  color: #6b5a4d;
+  /* Muted Brown */
   max-width: 600px;
   margin: 0 auto;
 }
@@ -409,8 +418,8 @@
   position: relative;
   width: 100vw;
   max-width: 100%;
-  mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
-  -webkit-mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+  mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
   padding: 0px 0 40px 0;
 }
 
@@ -447,7 +456,7 @@
 }
 
 .brand-visual {
-  flex: 0 0 70%;
+  flex: 0 0 60%;
   height: 100%;
   overflow: hidden;
   position: relative;
@@ -465,7 +474,7 @@
 }
 
 .brand-info {
-  flex: 0 0 30%;
+  flex: 0 0 40%;
   height: 100%;
   display: flex;
   align-items: center;
@@ -481,8 +490,8 @@
   font-size: 13px;
   text-transform: uppercase;
   letter-spacing: 3px;
-  color: #000;
-  /* Black text */
+  color: var(--color-title-text);
+  /* Brown text */
   display: block;
   margin-bottom: 15px;
   font-weight: 600;
@@ -503,16 +512,16 @@
 .brand-divider {
   width: 40px;
   height: 3px;
-  background: #000;
-  /* Black divider for high contrast */
+  background: var(--color-title-text);
+  /* Brown divider for high contrast */
   margin-bottom: 25px;
 }
 
 .brand-short-desc {
   font-size: 0.95rem;
   /* Slightly smaller than name */
-  color: #000;
-  /* Black text */
+  color: var(--color-text);
+  /* Brown text */
   line-height: 1.6;
   font-weight: 500;
   max-width: 90%;
@@ -561,7 +570,7 @@
   }
 
   .brand-name-split {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
 
   @keyframes scrollCarousel {
@@ -579,14 +588,20 @@
   .brand-card-split {
     flex-direction: column;
     height: auto;
+    min-height: 500px;
+    /* Ensure enough height for both sections */
   }
 
   .brand-visual {
-    flex: 0 0 300px;
+    flex: none;
+    /* remove flex basis */
+    height: 250px;
+    /* fixed height for image area */
   }
 
   .brand-info {
-    flex: 0 0 auto;
-    padding: 30px;
+    flex: 1;
+    /* let text take remaining space */
+    padding: 25px;
   }
 }

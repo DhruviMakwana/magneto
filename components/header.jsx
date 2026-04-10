@@ -25,8 +25,8 @@ export default function Header() {
         <div className="nav-left">
           <a href="/">Home</a>
           <a href="#">The Mall</a>
-          <a href="#">Store</a>
-          <a href="#">Food Zone</a>
+          <a href="/store">Store</a>
+          <a href="/food-zone">Food Zone</a>
           <a href="#">Fun & Game</a>
         </div>
 
@@ -39,7 +39,7 @@ export default function Header() {
         <div className="nav-right">
           <a href="#">Movie </a>
           <a href="#">Event</a>
-          <a href="#">Magneto Clubroom</a>
+          <a href="#">Clubroom</a>
           <a href="#">Office</a>
           <a href="/services">Services</a>
         </div>
@@ -58,12 +58,12 @@ export default function Header() {
         <nav className="mobile-links">
           <a href="/" onClick={toggleMenu}>Home</a>
           <a href="#" onClick={toggleMenu}>The Mall</a>
-          <a href="#" onClick={toggleMenu}>Store</a>
-          <a href="#" onClick={toggleMenu}>Food Zone</a>
+          <a href="/store" onClick={toggleMenu}>Store</a>
+          <a href="/food-zone" onClick={toggleMenu}>Food Zone</a>
           <a href="#" onClick={toggleMenu}>Fun & Game</a>
           <a href="#" onClick={toggleMenu}>Movie</a>
           <a href="#" onClick={toggleMenu}>Event</a>
-          <a href="#" onClick={toggleMenu}>Magneto Clubroom</a>
+          <a href="#" onClick={toggleMenu}>Clubroom</a>
           <a href="#" onClick={toggleMenu}>Office</a>
           <a href="#" onClick={toggleMenu}>Floor Map</a>
           <a href="/services" onClick={toggleMenu}>Services</a>
