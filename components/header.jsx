@@ -26,8 +26,7 @@ export default function Header() {
           <a href="/">The Mall</a>
           <a href="/store">Store</a>
           <a href="/food-zone">Food Zone</a>
-          <a href="#">Fun & Game</a>
-          <a href="#">Movie </a>
+          <a href="/fun-games">Fun &amp; Games</a>
         </div>
 
         {/* CENTER LOGO */}
@@ -37,12 +36,12 @@ export default function Header() {
 
         {/* RIGHT (Desktop) */}
         <div className="nav-right">
-
-          <a href="#">Event</a>
-          <a href="#">Clubroom</a>
-          <a href="#">Office</a>
+          <a href="/movies">Movie </a>
+          <a href="/events">Event</a>
+          <a href="/clubroom">Clubroom</a>
+          <a href="/offices">Offices</a>
           <a href="/services">Services</a>
-          <a href="/about_us">Aboout Us</a>
+          <a href="/about">Aboout Us</a>
         </div>
 
         {/* HAMBURGER BUTTON */}
@@ -61,11 +60,11 @@ export default function Header() {
           <a href="#" onClick={toggleMenu}>The Mall</a>
           <a href="/store" onClick={toggleMenu}>Store</a>
           <a href="/food-zone" onClick={toggleMenu}>Food Zone</a>
-          <a href="#" onClick={toggleMenu}>Fun & Game</a>
-          <a href="#" onClick={toggleMenu}>Movie</a>
-          <a href="#" onClick={toggleMenu}>Event</a>
-          <a href="#" onClick={toggleMenu}>Clubroom</a>
-          <a href="#" onClick={toggleMenu}>Office</a>
+          <a href="/fun-games" onClick={toggleMenu}>Fun &amp; Games</a>
+          <a href="/movies" onClick={toggleMenu}>Movie</a>
+          <a href="/events" onClick={toggleMenu}>Event</a>
+          <a href="/clubroom" onClick={toggleMenu}>Clubroom</a>
+          <a href="/offices" onClick={toggleMenu}>Offices</a>
           <a href="#" onClick={toggleMenu}>Floor Map</a>
           <a href="/services" onClick={toggleMenu}>Services</a>
         </nav>

@@ -1,3 +1,7 @@
+// Addition by Om Shrivastava on 09-04-2026
+// Reason: Footer links to About and Contact routes
+
+import Link from "next/link";
 import styles from './Footer.module.css';
 
 export default function Footer() {
@@ -33,13 +37,15 @@ export default function Footer() {
 
           <div className={styles['nav-col']}>
             <h4>Entertainment</h4>
-            <a href="#">Fun & Games</a>
-            <a href="#">Movies</a>
-            <a href="#">Events</a>
+            <Link href="/fun-games">Fun &amp; Games</Link>
+            <Link href="/movies">Movies</Link>
+            <Link href="/events">Events</Link>
+            <Link href="/clubroom">Club Room</Link>
           </div>
 
           <div className={styles['nav-col']}>
             <h4>Information</h4>
+            <Link href="/contact">Contact Us</Link>
             <a href="#">Offers</a>
             <a href="#">Customer Service</a>
             <a href="#">How to Reach</a>
@@ -50,7 +56,7 @@ export default function Footer() {
             <h4>Legal</h4>
             <a href="#">Privacy Policy</a>
             <a href="#">Terms & Conditions</a>
-            <a href="#">Office</a>
+            <Link href="/offices">Offices</Link>
           </div>
         </div>
       </div>
