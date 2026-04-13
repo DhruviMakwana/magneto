@@ -56,14 +56,14 @@ export default function DiningCarousel() {
   return (
     <section className="dining-interactive-section">
       <div className="dining-layout">
-        
+
         {/* LEFT COMPONENT - DYNAMIC MAIN IMAGE */}
         <div className="dining-main-display">
-          <img 
+          <img
             key={activeItem.id} // Force remount for transition effect
-            src={activeItem.img} 
-            alt={activeItem.title} 
-            className="dining-main-img fade-in-animation" 
+            src={activeItem.img}
+            alt={activeItem.title}
+            className="dining-main-img fade-in-animation"
           />
           <div className="dining-main-overlay"></div>
           <div className="dining-main-content fade-in-up-animation">
@@ -76,16 +76,16 @@ export default function DiningCarousel() {
 
         {/* RIGHT COMPONENT - STATIC TEXT & CAROUSEL */}
         <div className="dining-right-panel">
-          
+
           {/* Top Text Block */}
           <div className="dining-header-block">
-            <h2 className="dining-section-title">Culinary delights</h2>
+            <h2 className="dining-section-title">Culinary <span>Delights</span></h2>
             <p className="dining-section-desc">From quick bites to gourmet meals, discover something for every palate.</p>
             <a href="#" className="view-all-link">View All</a>
           </div>
 
           {/* Bottom Carousel Track */}
-          <div 
+          <div
             className="dining-cards-container"
             onMouseEnter={() => setIsPaused(true)}
             onMouseLeave={() => setIsPaused(false)}
@@ -95,10 +95,10 @@ export default function DiningCarousel() {
               {[...diningData, ...diningData].map((item, index) => {
                 const actualIndex = index % diningData.length;
                 const isActive = actualIndex === activeIndex;
-                
+
                 return (
-                  <div 
-                    key={index} 
+                  <div
+                    key={index}
                     className={`small-dining-card ${isActive ? 'active' : ''}`}
                     onClick={() => setActiveIndex(actualIndex)}
                   >
@@ -114,7 +114,7 @@ export default function DiningCarousel() {
               })}
             </div>
           </div>
-          
+
         </div>
       </div>
     </section>

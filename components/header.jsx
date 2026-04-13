@@ -23,11 +23,11 @@ export default function Header() {
 
         {/* LEFT (Desktop) */}
         <div className="nav-left">
-          <a href="/">Home</a>
-          <a href="#">The Mall</a>
+          <a href="/">The Mall</a>
           <a href="/store">Store</a>
           <a href="/food-zone">Food Zone</a>
           <a href="#">Fun & Game</a>
+          <a href="#">Movie </a>
         </div>
 
         {/* CENTER LOGO */}
@@ -37,11 +37,12 @@ export default function Header() {
 
         {/* RIGHT (Desktop) */}
         <div className="nav-right">
-          <a href="#">Movie </a>
+
           <a href="#">Event</a>
           <a href="#">Clubroom</a>
           <a href="#">Office</a>
           <a href="/services">Services</a>
+          <a href="/about_us">Aboout Us</a>
         </div>
 
         {/* HAMBURGER BUTTON */}

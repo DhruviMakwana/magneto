@@ -190,6 +190,7 @@
   color: var(--color-title-text);
   margin-bottom: 15px;
   letter-spacing: -1.5px;
+  font-family: var(--font-playfair), serif;
 }
 
 .section-title span {
@@ -402,14 +403,16 @@
   color: var(--color-title-text);
   margin-bottom: 12px;
   letter-spacing: -1px;
+  font-family: var(--font-playfair), serif;
 }
 
 .brands-subtitle {
-  font-size: 1.15rem;
+  font-size: 20px;
   color: #6b5a4d;
   /* Muted Brown */
   max-width: 600px;
   margin: 0 auto;
+  font-family: var(--font-playfair), serif;
 }
 
 .carousel-container {
@@ -604,4 +607,15 @@
     /* let text take remaining space */
     padding: 25px;
   }
+}
+.brands-title span {
+  color: var(--color-gold);
+}
+.iconic-underline {
+    background: var(--color-gold);
+    width: 60px;
+    height: 3px;
+    
+    margin: 0 auto;
+    margin-top:20px;
 }

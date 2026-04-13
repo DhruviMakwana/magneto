@@ -22,19 +22,6 @@ export default function Services() {
           </div>
         </div>
 
-        {/* Personal Shopper */}
-        <div className="service-card">
-          <div className="service-icon-box">
-            <svg viewBox="0 0 24 24" stroke="currentColor" fill="none">
-              <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
-            </svg>
-          </div>
-          <div className="service-info">
-            <h3>Personal Shopper</h3>
-            <p>Experience tailored style recommendations with our fashion experts. We curate the best of our boutiques for your unique taste.</p>
-          </div>
-        </div>
-
         {/* Valet Parking */}
         <div className="service-card">
           <div className="service-icon-box">
@@ -123,6 +110,39 @@ export default function Services() {
           <div className="service-info">
             <h3>General Assistance</h3>
             <p>From lost and found support to general wayfinding and mall queries, our info desks are positioned for your convenience.</p>
+          </div>
+        </div>
+
+        {/* Wheelchair Assistance */}
+        <div className="service-card">
+          <div className="service-icon-box">
+            <svg viewBox="0 0 24 24" stroke="currentColor" fill="none">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M12 3a1 1 0 100 2 1 1 0 000-2zm-1 4v5l-3 3m4-8h3m-3 8a5 5 0 110-10 5 5 0 010 10zm0 0v2m0 2h.01" />
+              <circle cx="12" cy="19" r="2" />
+              <path strokeLinecap="round" strokeLinejoin="round" d="M9 10h6m-3-4v4" />
+              <path strokeLinecap="round" strokeLinejoin="round" d="M6.5 17.5A5.5 5.5 0 0112 13h4l1.5 4" />
+            </svg>
+          </div>
+          <div className="service-info">
+            <h3>Wheelchair Assistance</h3>
+            <p>Complimentary wheelchairs are available at all entry points. Our trained staff provide dedicated mobility support to ensure every guest navigates the mall with complete ease and dignity.</p>
+          </div>
+        </div>
+
+        {/* Baby Carriages */}
+        <div className="service-card">
+          <div className="service-icon-box">
+            <svg viewBox="0 0 24 24" stroke="currentColor" fill="none">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M3 10h13a5 5 0 015 5v1H3v-6z" />
+              <path strokeLinecap="round" strokeLinejoin="round" d="M6 16v1m9 0v1" />
+              <circle cx="6" cy="18.5" r="1.5" />
+              <circle cx="15" cy="18.5" r="1.5" />
+              <path strokeLinecap="round" strokeLinejoin="round" d="M3 10V7a2 2 0 012-2h5l3 5" />
+            </svg>
+          </div>
+          <div className="service-info">
+            <h3>Baby Carriages</h3>
+            <p>Luxury strollers and baby carriages are available on complimentary loan from our Guest Services desk. Shop in comfort while your little ones travel in style throughout the mall.</p>
           </div>
         </div>
       </section>

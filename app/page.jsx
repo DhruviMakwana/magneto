@@ -1,5 +1,6 @@
 import './page.css';
 import DiningCarousel from '../components/DiningCarousel';
+import HeroImageSlider from '../components/HeroImageSlider';
 
 export default function Home() {
   return (
@@ -17,20 +18,20 @@ export default function Home() {
             </div>
           </div>
           <div className="hero-image-side">
-            <div className="image-wrapper">
-              <img src="/hero-mall-light.png" alt="Luxury Mall Interior" className="hero-main-img" />
-              <div className="image-overlay-glow"></div>
-            </div>
+            <HeroImageSlider />
           </div>
         </div>
       </section>
+
+      {/* <hr className="section-divider" aria-hidden="true" /> */}
 
       {/* LUXURY BRANDS CAROUSEL */}
       <section className="brands-carousel-section">
         <div className="brands-header">
           <span className="brands-tag">The Collection</span>
-          <h2 className="brands-title">Iconic Boutiques</h2>
+          <h2 className="brands-title">Iconic <span>Boutiques</span></h2>
           <p className="brands-subtitle">Experience the pinnacle of craftsmanship, heritage, and design.</p>
+          <div className="iconic-underline"></div>
         </div>
 
         <div className="carousel-container">
@@ -180,6 +181,8 @@ export default function Home() {
         </div>
       </section>
 
+      {/* <hr className="section-divider" aria-hidden="true" /> */}
+
       {/* FEATURED EXPERIENCES */}
       <section className="featured-section">
         <div className="section-header-centered">
@@ -229,6 +232,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* <hr className="section-divider" aria-hidden="true" /> */}
 
       {/* FOOD & DINING SPLIT SECTION */}
       <DiningCarousel />

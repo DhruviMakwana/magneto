@@ -85,6 +85,16 @@ const brands = [
   },
   {
     id: 9,
+    name: "TOMMY HILFIGER",
+    tagline: "Elegance meets class",
+    category: "Menswear",
+    floor: "Level 2",
+    image: "https://images.unsplash.com/photo-1490578474895-699cd4e2cf59?auto=format&fit=crop&w=1200&q=80",
+    size: "normal",
+  },
+
+  {
+    id: 10,
     name: "ALDO",
     tagline: "Step into style",
     category: "Footwear",
@@ -94,7 +104,7 @@ const brands = [
     size: "wide",
   },
   {
-    id: 10,
+    id: 11,
     name: "LOUIS PHILIPPE",
     tagline: "The upper crust of menswear",
     category: "Fashion",

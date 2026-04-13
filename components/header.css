@@ -62,18 +62,21 @@
   font-size: 14px;
   font-weight: 700;
   color: var(--color-title-text);
-  letter-spacing: 2.5px;
+  /* letter-spacing: 2.5px; */
   text-transform: uppercase;
   position: relative;
   white-space: nowrap;
   /* transition: all 0.4s ease; */
   opacity: 1;
+  display: inline-block;
+  transition: all 0.3s ease;
 }
 
 .nav-left a:hover,
 .nav-right a:hover {
   color: var(--color-gold);
-  letter-spacing: 3px;
+  transform: translateY(-2px);
+  /* letter-spacing: 3px; */
 }
 
 /* Expanding Golden Underline */
